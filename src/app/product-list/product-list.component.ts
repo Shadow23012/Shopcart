@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 
 import { products } from '../products';
 
+import { DatabaseService } from '../database.service';
+import { Product } from '../products';
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -9,7 +12,15 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   
-  products = products;
+  products: Product [] = [];
+
+  constructor(private database:DatabaseService) {
+    this.database.getItems().subscribe(res => {
+      console.log(res);
+      this.products = res;
+    });
+  }
+  
 
 }
 

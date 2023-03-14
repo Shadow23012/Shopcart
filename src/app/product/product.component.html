@@ -28,6 +28,9 @@
 
             <img src="./assets/phones/{{producto.images}}" width="100px" height="100px" alt="Sin imagen">
             <button type="button" (click)="addToCart(producto)">Buy</button>
+
+            <p-toast position="top-center" style="position: absolute;top: 40px; left: 40px;"> </p-toast>
+            
           </p-dialog>
         
         
@@ -38,6 +41,8 @@
             label="Mostrar"
           >
           Details
+
+          
         </button>
 
         

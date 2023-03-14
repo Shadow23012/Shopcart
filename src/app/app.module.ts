@@ -14,6 +14,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import {ToastModule} from 'primeng/toast';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     HttpClientModule,
     DialogModule,
     ReactiveFormsModule,
+    ToastModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
