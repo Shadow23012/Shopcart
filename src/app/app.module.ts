@@ -15,6 +15,9 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import {ToastModule} from 'primeng/toast';
+import { LoginComponent } from './login/login.component';
+import {PasswordModule} from 'primeng/password'
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   imports: [
@@ -24,11 +27,14 @@ import {ToastModule} from 'primeng/toast';
     DialogModule,
     ReactiveFormsModule,
     ToastModule,
+    PasswordModule,
+    InputTextModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'cart', component: CartComponent},
-      { path: 'shipping', component: ShippingComponent }
+      { path: 'shipping', component: ShippingComponent },
+      { path: 'login', component: LoginComponent}
     ])
   ],
   declarations: [
@@ -38,7 +44,8 @@ import {ToastModule} from 'primeng/toast';
     ProductComponent,
     ProductAlertsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    LoginComponent
   ],
   bootstrap: [
     AppComponent

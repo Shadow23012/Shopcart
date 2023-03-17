@@ -95,9 +95,18 @@ label {
 /* Fancy Button */
 
 .fancy-button {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #000000;
+  margin: 15px;
 }
+
+.fancy-button2 {
+  background-color: #6019d2;
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+
 
 .fancy-button i.material-icons {
   color: #000000;
@@ -152,6 +161,36 @@ app-top-bar h1 {
   box-shadow: 6px 6px 5px 0px rgba(130, 36, 168, 1);
   }
 
+/*LOGIN*/
+
+  .container2 {
+    display: block;
+    background-color: lavender;
+    min-height: calc(50vh - 100px);
+    margin-left: 10%;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    line-height: 15px;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(130, 36, 168, 1);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(130, 36, 168, 1);
+    box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+    }
+
+    .LoginText {
+      background-color: #6019d2;
+      color: #ffffff;
+      font-size: xx-large;
+      padding: 15px;
+      -webkit-box-shadow: 6px 6px 5px 0px rgba(130, 36, 168, 1);
+      -moz-box-shadow: 6px 6px 5px 0px rgba(130, 36, 168, 1);
+      box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+    }
+
+    .LoginText i.material-icons {
+      color: #e6e6e6;
+      padding-right: 4px;
+    }
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
